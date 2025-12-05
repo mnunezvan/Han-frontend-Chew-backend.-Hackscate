@@ -1,0 +1,22 @@
+<div>
+  <h1>Bienvenido a mi Proyecto Rails</h1>
+
+  <% if user_signed_in? %>
+    <div>
+      <h2>¡Hola, <%= current_user.email %>!</h2>
+      
+      <p>Estás conectado correctamente.</p>
+
+      <%= button_to "Cerrar Sesión", destroy_user_session_path, method: :delete, data: { turbo: "false" } %>
+    </div>
+
+  <% else %>
+    <p>Para ver el contenido, necesitas identificarte.</p>
+
+    <div>
+      <%= link_to "Iniciar Sesión", new_user_session_path, style: "margin-right: 20px;" %>
+      
+      <%= link_to "Registrarse", new_user_registration_path %>
+    </div>
+  <% end %>
+</div>
