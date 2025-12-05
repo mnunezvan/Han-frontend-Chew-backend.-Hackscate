@@ -2,8 +2,9 @@
   <h1 class="titulo-principal">TutorMatch</h1>
 
   <% if user_signed_in? %>
+
     <%= link_to "Crear Oferta", crear_oferta_path, class: "boton-simple" %>
-    <%= button_to "Modo Tinder", modo_tinder_path, method: :get, class: "boton-simple" %>
+    <%= link_to "Volver", root_path, class: "boton-simple" %>
     <div>
       <h2 class="mensaje-bienvenida">¡Hola, <%= current_user.email %>!</h2>
 
@@ -20,4 +21,3 @@
     </div>
   <% end %>
 </header>
-

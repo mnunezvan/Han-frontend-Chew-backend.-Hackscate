@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  profile: one
+  precio: 1
+  ramo: MyString
+  descripcion: MyText
+  disponibilidad: MyText
+
+two:
+  profile: two
+  precio: 1
+  ramo: MyString
+  descripcion: MyText
+  disponibilidad: MyText
